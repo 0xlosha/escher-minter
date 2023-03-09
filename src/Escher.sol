@@ -2,9 +2,6 @@
 pragma solidity ^0.8.15;
 
 contract Escher {
-    bytes constant private code1 = hex"3d602d80600a3d3981f3363d3d373d3d3d363d73";
-    bytes constant private code2 = hex"5af43d82803e903d91602b57fd5bf3";
-
     uint256 constant private price = 0.000777 ether;
     uint256 constant private max_per_tx = 5;
 
