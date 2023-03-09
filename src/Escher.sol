@@ -89,7 +89,6 @@ contract Escher {
                 mstore(add(p, 0x14), shl(0x60, address()))
                 mstore(add(p, 0x28), shl(0x88, 0x5af43d82803e903d91602b57fd5bf3))
 
-
                 let proxy_pointer := p
                 p := add(p, 0x40)
 
