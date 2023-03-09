@@ -25,7 +25,7 @@ contract ContractTest is Test {
         (bool success, bytes memory response) = address(escher).call{value: price * q}("");
         require(success, string(response));
 
-        (success, response) = address(0x1BBEC3ef715ccE96b715bC0Aa8feF8989F7aD3B2).call(abi.encodeWithSignature("balanceOf(address)", alice));
+        (success, response) = 0x1BBEC3ef715ccE96b715bC0Aa8feF8989F7aD3B2.call(abi.encodeWithSignature("balanceOf(address)", alice));
         uint256 b = abi.decode(response, (uint256));
         assertEq(b, q);
     }
