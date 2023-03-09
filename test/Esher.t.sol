@@ -10,7 +10,7 @@ contract ContractTest is Test {
     address alice = makeAddr("alice");
 
     function setUp() public {
-        vm.createSelectFork(vm.rpcUrl("archive_mainnet"));
+        vm.createSelectFork(vm.rpcUrl("archive_mainnet"), 16787900);
 
         vm.deal(alice, 100 ether);
         vm.startPrank(alice, alice);
